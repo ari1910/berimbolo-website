@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #e2f5fd;
+}
+
+.reg-head {
+    text-align: center;
+    margin-top: 16px;
+    color: #5abbb3;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+}
+
+.register {
+    box-shadow: 4PX;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.register-img img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+.register-img{
+    display: flex ;
+}
+.register-img h3 {
+    font-size: 24px;
+    
+    margin-top: 10px;
+    text-align: center;
+    margin-top: 35%;
+    margin-left: 10%;
+    margin-right: 20px;
+    color: rgb(16, 5, 75);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.reg-form {
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#hint-txt {
+    font-size: 20px;
+    color: rgb(9, 74, 112);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.reg-form input {
+    padding: 10px;
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.reg-form button {
+    padding: 12px 20px;
+    background-color: #5abbb3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reg-form button:hover {
+    background-color: #3d9a92;
+}
+
+@media (max-width:1089px){
+    .register{
+        flex-direction: column;
+    }
+}
+@media (max-width: 1036px) {
+    .register {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .register-img{
+        flex-direction: column;
+    }
+    .register-img h3{
+        margin-top: 10%;
+        font-size: 35px;
+    }
+    .register-img img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .reg-form {
+        max-width: 100%;
+    }
+}
